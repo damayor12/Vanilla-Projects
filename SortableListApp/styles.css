@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+    --border-color: #e3e5e4;
+    --background-color: #c3c7ca;
+    --text-color: #34444f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+.row {
+    border: 1px solid #c3c7ca;
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    flex: 1;
+}
+
+ul li:not(:last-of-type) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.number {
+    display: flex;
+    background-color: var(--background-color);
+    align-items: center;
+    width: 50px;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    font-size: 28px;
+}
+
+.row .person-name {
+    margin: 0 20px 0 0;
+}
+
+.row li.right .person-name {
+    color: green;
+}
+
+.row li.over .draggable {
+    background-color: #aeaeae;
+}
+
+.row li.wrong .person-name {
+    color: red;
+}
+
+.draggable {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    flex: 1;
+}
+
+.check-btn {
+    background-color: var(--background-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.check-btn:active {
+    transform: scale(0.9);
+}
+
+.check-btn:focus {
+    outline: none;
+}
+
+/* ul li > * {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    align-items: center;
+}
+
+ul p {
+    padding-right: 20px;
+}  */
