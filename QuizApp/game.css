@@ -41,7 +41,7 @@ body {
 #hud {
     display: flex;
     justify-content: space-between;
-    /* border: solid 2px blue; */
+    /* border: solid 2px bue; */
     font-size: 2rem;
 }
 
